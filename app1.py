@@ -11,7 +11,7 @@ st.session_state.student_interests = ["Innovation", "Technology"]
 def news(interests):
     title = []
     urla = []
-    news_api_key = "3350bf4098cf429aa98dbe7cb8450883"  # Replace with your News API key
+    news_api_key = ""  # Replace with your News API key
     for interest in interests:
         url = f"https://newsapi.org/v2/everything?q={interest}&apiKey={news_api_key}"
         news_data = requests.get(url).json()
@@ -23,7 +23,7 @@ def news(interests):
 
 # To-do list in the sidebar
 def suggest_youtube_video(query):
-    youtube = build("youtube", "v3", developerKey="AIzaSyC2ToPIBoW3jB3nq577TXQNpdDTlDHigyk")
+    youtube = build("youtube", "v3", developerKey="")
 
     # Search for videos based on the query
     search_response = youtube.search().list(
