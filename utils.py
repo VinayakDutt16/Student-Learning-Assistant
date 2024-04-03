@@ -55,7 +55,7 @@ def speech_to_text(audio_data):
         )
     return transcript
 
-# elevenlabs_api_key = '0a88abbde48eaebdf330619cc0176d93'
+# elevenlabs_api_key = ''
 # elevenlabs.set_api_key(elevenlabs_api_key)
 
 # def text_to_speech(input_text, voice="Mimi", settings=None):
